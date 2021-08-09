@@ -1,22 +1,22 @@
-<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="description" content="Web开发者，业余摄影。"><meta name="keyword" content="GARY.shen, 前端, Web Developer, NodeJS"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>我的全设备科学上网之路</title><link rel="shortcut icon" href="/images/avatar.png" type="image/x-icon"><link href="/styles/site.css" rel="stylesheet"></head><body><header class="container" id="header"><div class="header"><div class="header-left"><div class="avatar"><img src="/images/avatar.png"></div><div class="author"><div class="author-name"><a href="/">GARY.SHEN</a></div><div class="about-me">Halo~</div></div></div><div class="header-right"><ul class="navigation"><li><a href="/archives">归档</a></li></ul></div><div class="about-me-mask"><div class="about-me-wrap"><div class="about-me__header"><div class="avatar"><img src="/images/avatar.png"></div></div><ul class="socials"><li class="social-item"><span class="label"><img src="/images/socials/github.svg" alt="https://github.com/gary-Shen"></span><a href="https://github.com/gary-Shen" target="_blank" title="https://github.com/gary-Shen">https://github.com/gary-Shen</a></li><li class="social-item"><span class="label"><img src="/images/socials/email.svg" alt="guanlinshen@126.com"></span><span>guanlinshen@126.com</span></li><li class="social-item"><span class="label"><img src="/images/socials/wechat.svg" alt="Grinson"></span><span>Grinson</span></li></ul></div></div></div></header><div class="container post"><section class="article"><div class="title">我的全设备科学上网之路</div><div class="date">写于2020年07月11日</div><div class="content"><p>入手软路由，主要有下面几个原因：</p>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="description" content="Web开发者，业余摄影。"><meta name="keyword" content="GARY.shen, 前端, Web Developer, NodeJS"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>我的全设备科学上网之路</title><link rel="shortcut icon" href="/images/avatar.png" type="image/x-icon"><link href="/styles/site.css" rel="stylesheet"><meta name="generator" content="Hexo 5.4.0"></head><body><header class="container" id="header"><div class="header"><div class="header-left"><div class="avatar"><img src="/images/avatar.png"></div><div class="author"><div class="author-name"><a href="/">GARY.SHEN</a></div><div class="about-me">Halo~</div></div></div><div class="header-right"><ul class="navigation"><li><a href="/archives">归档</a></li></ul></div><div class="about-me-mask"><div class="about-me-wrap"><div class="about-me__header"><div class="avatar"><img src="/images/avatar.png"></div></div><ul class="socials"><li class="social-item"><span class="label"><img src="/images/socials/github.svg" alt="https://github.com/gary-Shen"></span><a href="https://github.com/gary-Shen" target="_blank" title="https://github.com/gary-Shen">https://github.com/gary-Shen</a></li><li class="social-item"><span class="label"><img src="/images/socials/flickr.svg" alt="https://www.flickr.com/photos/69944455@N05/"></span><a href="https://www.flickr.com/photos/69944455@N05/" target="_blank" title="https://www.flickr.com/photos/69944455@N05/">https://www.flickr.com/photos/69944455@N05/</a></li><li class="social-item"><span class="label"><img src="/images/socials/email.svg" alt="guanlinshen@126.com"></span><span>guanlinshen@126.com</span></li><li class="social-item"><span class="label"><img src="/images/socials/wechat.svg" alt="Grinson"></span><span>Grinson</span></li></ul></div></div></div></header><div class="container post"><section class="article"><div class="title">我的全设备科学上网之路</div><div class="date">写于2020年07月11日</div><div class="content"><p>入手软路由，主要有下面几个原因：</p>
 <ol>
 <li>买的科学上网vpn经常流量用不完；</li>
 <li>手机常开小火箭（Shadowrocket）还是挺耗电的；</li>
 <li><strong>55寸索尼电视只用来玩游戏和看国产内容可惜了，想看Netflix和YouTube，毕竟精神地球人；</strong></li>
-<li><strong>想开小型的轰趴，三五人观影玩乐。</strong><a id="more"></a>
-</li>
+<li><strong>想开小型的轰趴，三五人观影玩乐。</strong><span id="more"></span></li>
 </ol>
 <p>折腾软路由主要目的还是实现最后两点。于是google找信息怎么实现路由器科学上网。在各种方式中选择了比较一劳永逸的方式：软路由（其实就是一台电脑主机）。</p>
 <h2 id="拓补图"><a href="#拓补图" class="headerlink" title="拓补图"></a>拓补图</h2><p><img src="./0805F191-E811-49C7-AB29-42C4403A2F37.png" alt="拓补图"></p>
-<h2 id="1-选购软路由硬件"><a href="#1-选购软路由硬件" class="headerlink" title="1. 选购软路由硬件"></a>1. 选购软路由硬件</h2><p>某宝搜索”软路由“有很多选择。<br>油管有位博主有选购介绍：<a href="https://www.youtube.com/watch?v=rGIUouvATqc&amp;t=190s" target="_blank" rel="noopener">YouTube</a><br>我自己买的的3865U|8G|120G 目前跑一个Openwrt，没有虚拟机和自己跑的其他服务，性能很<strong>过剩</strong>。<br>一般人（比如我）不想麻烦自己装固件，建议找那些已经自带系统和固件的商家。</p>
-<h2 id="2-配置Openwrt"><a href="#2-配置Openwrt" class="headerlink" title="2. 配置Openwrt"></a>2. 配置Openwrt</h2><p>此处的前提是LEDE/Openwrt已经装好。（不清楚怎么安装的话，此处有另一位油管博主视频介绍：<a href="https://www.youtube.com/watch?v=CTVDptZI90Q&amp;t=285s" target="_blank" rel="noopener">YouTube</a>）</p>
+<h2 id="1-选购软路由硬件"><a href="#1-选购软路由硬件" class="headerlink" title="1. 选购软路由硬件"></a>1. 选购软路由硬件</h2><p>某宝搜索”软路由“有很多选择。<br>油管有位博主有选购介绍：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=rGIUouvATqc&t=190s">YouTube</a><br>我自己买的的3865U|8G|120G 目前跑一个Openwrt，没有虚拟机和自己跑的其他服务，性能很<strong>过剩</strong>。<br>一般人（比如我）不想麻烦自己装固件，建议找那些已经自带系统和固件的商家。</p>
+<h2 id="2-配置Openwrt"><a href="#2-配置Openwrt" class="headerlink" title="2. 配置Openwrt"></a>2. 配置Openwrt</h2><p>此处的前提是LEDE/Openwrt已经装好。（不清楚怎么安装的话，此处有另一位油管博主视频介绍：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=CTVDptZI90Q&t=285s">YouTube</a>）</p>
 <h3 id="2-1-修改接口"><a href="#2-1-修改接口" class="headerlink" title="2.1. 修改接口"></a>2.1. 修改接口</h3><p>网络 -&gt; 接口 -&gt; LAN -&gt; 编辑 -&gt; 物理设置，将其中一个ethx（以太网）接口取消勾选留作拨号WAN口（LAN1 -&gt; eth0）<br><img src="./6B3FB0F1-9780-4C3F-B482-66E1BB0DCE78.png" alt="修改接口"></p>
 <h3 id="2-2-拨号上网"><a href="#2-2-拨号上网" class="headerlink" title="2.2. 拨号上网"></a>2.2. 拨号上网</h3><p>网络 -&gt; 接口 -&gt; WAN -&gt; 编辑 -&gt; 常规设置<br><img src="./AD3B2076-A75A-4E61-B8B1-DEE120A46FC0.png" alt="拨号上网"></p>
 <h3 id="2-3-安装V2Ray插件"><a href="#2-3-安装V2Ray插件" class="headerlink" title="2.3. 安装V2Ray插件"></a>2.3. 安装V2Ray插件</h3><blockquote>
 <p>我买的固件自带koolss，一个ss/ssr代理插件，不支持vmess协议。</p>
 </blockquote>
-<p>此处的前提是软路由已经能正常上网。<br>酷软 -&gt; 未安装，找到V2Ray。<br>没有的话则需要离线安装。<br>从github下载离线包<a href="https://github.com/bbsecxyz/ledesoft/blob/master/v2ray/v2ray.tar.gz" target="_blank" rel="noopener">v2ray</a>，安装时日志如果提示“含非法关键词”而安装失败，则需要通过ssh客户端（Mac自带终端，Windows <a href="https://mobaxterm.mobatek.net/" target="_blank" rel="noopener">MobaXterm</a>）登录到路由系统，输入下列命令行并回车：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sed -i <span class="string">'s/\tdetect_package/\t# detect_package/g'</span> /koolshare/scripts/ks_tar_install.sh</span><br></pre></td></tr></table></figure>
+<p>此处的前提是软路由已经能正常上网。<br>酷软 -&gt; 未安装，找到V2Ray。<br>没有的话则需要离线安装。<br>从github下载离线包<a target="_blank" rel="noopener" href="https://github.com/bbsecxyz/ledesoft/blob/master/v2ray/v2ray.tar.gz">v2ray</a>，安装时日志如果提示“含非法关键词”而安装失败，则需要通过ssh客户端（Mac自带终端，Windows <a target="_blank" rel="noopener" href="https://mobaxterm.mobatek.net/">MobaXterm</a>）登录到路由系统，输入下列命令行并回车：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sed -i <span class="string">&#x27;s/\tdetect_package/\t# detect_package/g&#x27;</span> /koolshare/scripts/ks_tar_install.sh</span><br></pre></td></tr></table></figure>
+
 <p>回到管理后台继续离线安装。安装完毕后界面如下：<br><img src="./1211594529895_.pic_hd.jpg" alt="v2ray"></p>
 <h3 id="2-4-配置V2Ray插件"><a href="#2-4-配置V2Ray插件" class="headerlink" title="2.4. 配置V2Ray插件"></a>2.4. 配置V2Ray插件</h3><p>打开代理开关，选择“服务器列表”：</p>
 <p><img src="./LEDE_V2Ray.png" alt="v2ray"></p>
@@ -39,7 +39,7 @@
 </ol>
 <p><img src="./TL-WR886N_2.png" alt="打开“无线功能”"></p>
 <ol start="4">
-<li>LAN口设置，ip设为手动，假设软路由的地址是<code>192.268.1.1</code>，那么这里的ip设为<code>192.168.1.x</code>，x为1-255的数字。</li>
+<li>LAN口设置，ip设为手动，假设软路由的地址是<code>192.168.1.1</code>，那么这里的ip设为<code>192.168.1.x</code>，x为1-255的数字。</li>
 </ol>
 <p><img src="./TL-WR886N_3.png" alt="LAN口设置"></p>
 <ol start="5">
@@ -50,21 +50,31 @@
 <p><img src="./netflix.jpg" alt="Netflix"></p>
 <p>参考资料：</p>
 <ul>
-<li><p><a href="https://www.youtube.com/watch?v=rGIUouvATqc" target="_blank" rel="noopener">2019软路由推荐/科学上网软路由选购/ESXI下LEDE软路由v2ray科学上网速度测试（ESXI/LEDE/V2ray）</a></p>
+<li><p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=rGIUouvATqc">2019软路由推荐/科学上网软路由选购/ESXI下LEDE软路由v2ray科学上网速度测试（ESXI/LEDE/V2ray）</a></p>
 </li>
-<li><p><a href="https://www.youtube.com/watch?v=CTVDptZI90Q&amp;t=285s" target="_blank" rel="noopener">教你解锁软路由/安装LEDE软路由/一键安装软路由/手把手教你搭建自己的软路由入门设置(路由/软路由/软路由翻墙/软路由科学上网)</a></p>
+<li><p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=CTVDptZI90Q&t=285s">教你解锁软路由/安装LEDE软路由/一键安装软路由/手把手教你搭建自己的软路由入门设置(路由/软路由/软路由翻墙/软路由科学上网)</a></p>
 </li>
-<li><p><a href="https://www.youtube.com/watch?v=tvmTeEBvT4I&amp;t=750s" target="_blank" rel="noopener">小白专用手把手普通WIFI路由器如何设置软路由的AP模式</a></p>
+<li><p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=tvmTeEBvT4I&t=750s">小白专用手把手普通WIFI路由器如何设置软路由的AP模式</a></p>
 </li>
-<li><p><a href="https://help.netflix.com/zh-tw/node/57688" target="_blank" rel="noopener">Netflix download</a></p>
+<li><p><a target="_blank" rel="noopener" href="https://help.netflix.com/zh-tw/node/57688">Netflix download</a></p>
 </li>
-<li><p><a href="https://blog.shuziyimin.org/16" target="_blank" rel="noopener">在中国看 Netflix（网飞），看这一篇就够了</a></p>
+<li><p><a target="_blank" rel="noopener" href="https://blog.shuziyimin.org/16">在中国看 Netflix（网飞），看这一篇就够了</a></p>
 </li>
 </ul>
 <p>【完结】</p>
-</div><div class="tags"><a class="tag-link" href="/tags/记录/">记录</a></div></section></div><div class="container"><ul class="nav"></ul><div class="comments"><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus</a></noscript></div></div></div><div id="backToTop"><div class="back-arrow back-arrow-left"></div><div class="back-arrow back-arrow-right"></div></div><footer class="container"><div class="rights"><span>Powered by </span><a href="http://hexo.io" target="_blank">Hexo</a><span>, Theme </span><a href="https://github.com/gary-Shen/hexo-theme-bear" target="_blank">Bear</a><span>.</span></div></footer><script src="/script/jquery.min.js"></script><link rel="stylesheet" href="/fancybox/jquery.fancybox.css"><script src="/fancybox/jquery.fancybox.pack.js"></script><script src="/script/index.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+</div><div class="tags"><a class="tag-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a></div></section></div><div class="container"><ul class="nav"></ul><div class="comments"><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="http://disqus.com/?ref_noscript">comments powered by Disqus</a></noscript></div></div></div><div id="backToTop"><div class="back-arrow back-arrow-left"></div><div class="back-arrow back-arrow-right"></div></div><footer class="container"><div class="rights"><span>Powered by </span><a href="http://hexo.io" target="_blank">Hexo</a><span>, Theme </span><a href="https://github.com/gary-Shen/hexo-theme-bear" target="_blank">Bear</a><span>.</span></div></footer>
+<script src="/script/jquery.min.js"></script>
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script src="/script/index.js"></script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 ga('create', 'UA-61220413-1', 'auto');
-ga('send', 'pageview');</script><script src="/script/post.js"></script><script>var disqus_shortname = 'www-garyshen-com';var disqus_url = 'http://garyshen.com/2020/07/11/我的全设备科学上网之路/';
+ga('send', 'pageview');</script>
+<script src="/script/post.js"></script>
+<script>var disqus_shortname = 'www-garyshen-com';var disqus_url = 'http://garyshen.com/2020/07/11/%E6%88%91%E7%9A%84%E5%85%A8%E8%AE%BE%E5%A4%87%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E4%B9%8B%E8%B7%AF/';
 (function(){
  var dsq = document.createElement('script');
  dsq.type = 'text/javascript';
