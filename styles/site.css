@@ -422,6 +422,14 @@ footer a {
 .social-item {
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 479px) {
+  .social-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 18rem;
+  }
+}
 .social-item .label {
   width: 2rem;
   height: 2rem;
