@@ -519,7 +519,7 @@ footer a {
   border: 1px #a7b0b3 solid;
 }
 .article .checkbox-wrap.checked {
-  background-image: url("/images/check.svg");
+  background-image: url("../images/check.svg");
   background-repeat: no-repeat;
 }
 .article .checkbox-wrap input {
@@ -638,6 +638,96 @@ footer a {
 .content a.fancybox:before {
   display: none;
 }
+.article-gallery {
+  position: relative;
+  margin: 2rem 0;
+}
+@media screen and (max-width: 479px) {
+  .article-gallery {
+    margin: 1.5rem 0;
+  }
+}
+.article-gallery-photos {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
+}
+.article-gallery-img {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+.article-gallery-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.article-gallery-img--preview {
+  height: 50px;
+}
+.article-gallery-img--preview img {
+  height: 100%;
+  object-fit: cover;
+  filter: blur(8px);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.article-gallery-img__sharp {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,0) 100%);
+}
+.article-gallery-more {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 0 1.142857142857143rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  text-align: center;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.7) 100%);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.7) 100%);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.7) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.7) 100%);
+}
 .nav {
   margin-bottom: 4.571428571428571rem;
 }
@@ -742,6 +832,7 @@ footer a {
   margin: 1.142857142857143rem 0;
   -webkit-flex-basis: 50%;
   flex-basis: 50%;
+  min-width: 0;
 }
 @media screen and (max-width: 479px) {
   .post-archive {
@@ -766,6 +857,7 @@ footer a {
   display: -ms-flexbox;
   display: box;
   display: flex;
+  min-width: 0;
   line-height: 1.6rem;
   -webkit-transition: all 0.6s ease;
   -moz-transition: all 0.6s ease;
@@ -790,6 +882,7 @@ footer a {
   box-flex: 1;
   -webkit-flex-grow: 1;
   flex-grow: 1;
+  min-width: 0;
   height: 5rem;
   overflow: hidden;
 }
@@ -798,16 +891,22 @@ footer a {
   font-weight: bold;
   margin-bottom: 0.2rem;
   display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .post-archive__excerpt {
   color: #a0a0a0;
-  height: 3rem;
   overflow: hidden;
-  position: relative;
 }
 .post-archive__excerpt-content {
-  position: absolute;
-  width: 100%;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: normal;
 }
 .article pre,
 .article .highlight {
